@@ -200,59 +200,21 @@ body {
 
 .hero-image {
     position: relative;
-    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.floating-card {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.hero-photo {
+    max-width: 100%;
+    height: auto;
     border-radius: 16px;
-    padding: 1.5rem;
-    text-align: center;
-    animation: float 6s ease-in-out infinite;
-    min-width: 180px;
-    max-width: 220px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
-.floating-card:nth-child(1) {
-    top: 10px;
-    left: 0;
-    animation-delay: 0s;
-}
-
-.floating-card:nth-child(2) {
-    top: 60%;
-    right: -30px;
-    animation-delay: 2s;
-}
-
-.floating-card:nth-child(3) {
-    bottom: 10px;
-    left: 35%;
-    animation-delay: 4s;
-}
-
-.floating-card i {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #ffd700;
-}
-
-.floating-card h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
-
-.floating-card p {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+.hero-photo:hover {
+    transform: scale(1.05);
 }
 
 /* Features Section */
@@ -967,7 +929,7 @@ body {
     }
 
     .hero-image {
-        height: 300px;
+        height: auto;
     }
 
     .contact-content {
@@ -1034,24 +996,10 @@ body {
 
 @media (max-width: 900px) {
     .hero-image {
-        height: 350px;
+        height: auto;
     }
-    .floating-card {
-        min-width: 140px;
-        max-width: 180px;
-        padding: 1rem;
-    }
-    .floating-card:nth-child(1) {
-        top: 0;
-        left: 0;
-    }
-    .floating-card:nth-child(2) {
-        top: 55%;
-        right: 0;
-    }
-    .floating-card:nth-child(3) {
-        bottom: 0;
-        left: 20%;
+    .hero-photo {
+        max-width: 90%;
     }
 }
 

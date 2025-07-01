@@ -1,0 +1,19 @@
+{
+  "name": "erpdev-homepage",
+  "version": "1.0.0",
+  "description": "ERP Development AS Homepage",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 3000 -o",
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "serve": "npx serve -s . -p 3000"
+  },
+  "keywords": ["homepage", "erp", "business", "website"],
+  "author": "ERP Development AS",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+} 
